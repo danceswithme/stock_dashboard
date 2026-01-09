@@ -73,6 +73,7 @@ Run the application:
 
 ```bash
 python src/main.py
+```
 
 You may enter:
 	•	A stock ticker (e.g. AAPL)

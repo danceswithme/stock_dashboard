@@ -2,7 +2,8 @@
 
 ## Overview
 **Stock Dashboard** is a Python-based project for analyzing and visualizing historical stock data.  
-It was built for personal practice and to help a family friend better understand investment performance.
+It was built for personal practice and to help a family friend better understand investment performance. 
+“Users can dynamically adjust timeframe, investment amount, and units to compare performance across assets.
 
 The project emphasizes **clean structure, reusable components, and transparent data workflows**, following common industry conventions.
 

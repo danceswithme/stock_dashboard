@@ -77,8 +77,8 @@ python src/main.py
 ```
 
 You may enter:
-	•	A stock ticker (e.g. AAPL)
-	•	A company name (e.g. Apple)
+-A stock ticker (e.g. AAPL)
+-A company name (e.g. Apple)
 
 If multiple matches are found, the application will prompt you to select the correct ticker.
 

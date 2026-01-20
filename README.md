@@ -34,14 +34,21 @@ The project emphasizes **clean structure, reusable components, and transparent d
 ```
 stock_dashboard/
 ├─ src/
-│  ├─ main.py
-│  ├─ data_loader.py
-│  ├─ search.py
+│  ├─ analysis.py
+│  ├─ cli.py
+│  ├─ config.py
+│  ├─ charts.py
+│  ├─ market_data.py
+│  ├─ storage.py
+│  ├─ ticker_loader.py
+│  ├─ ticker_searcher.py
 │
 ├─ data/
 │  └─ tickers.csv        # Auto-downloaded on first run (gitignored)
 │
 ├─ tests/
+│  ├─ test_calculations.py
+├─ main.py
 ├─ requirements.txt
 ├─ .gitignore
 └─ README.md

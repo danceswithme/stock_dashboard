@@ -33,25 +33,42 @@ The project emphasizes **clean structure, reusable components, and transparent d
 ## Project Structure
 ```
 stock_dashboard/
-├─ src/
-│  ├─ analysis.py
-│  ├─ cli.py
-│  ├─ config.py
-│  ├─ charts.py
-│  ├─ market_data.py
-│  ├─ storage.py
-│  ├─ ticker_loader.py
-│  ├─ ticker_searcher.py
+├── src/
+│   └── stock_dashboard/
+│       ├── __init__.py
+│       ├── main.py              # Application entry logic
+│       │
+│       ├── core/                # Analysis & visualization logic
+│       │   ├── __init__.py
+│       │   ├── analysis.py
+│       │   └── charts.py
+│       │
+│       ├── data/                # Market data access & storage
+│       │   ├── __init__.py
+│       │   ├── market_data.py
+│       │   ├── storage.py
+│       │   ├── ticker_loader.py
+│       │   └── ticker_search.py
+│       │
+│       ├── config/              # App configuration
+│       │   ├── __init__.py
+│       │   └── settings.py
+│       │
+│       └── cli/                 # Command-line interface
+│           ├── __init__.py
+│           └── menu.py
 │
-├─ data/
-│  └─ tickers.csv        # Auto-downloaded on first run (gitignored)
+├── data/
+│   └── tickers.csv              # Auto-downloaded on first run (gitignored)
 │
-├─ tests/
-│  ├─ test_calculations.py
-├─ main.py
-├─ requirements.txt
-├─ .gitignore
-└─ README.md
+├── notebooks/                   # Exploratory analysis & prototypes
+├── tests/
+│   └── test_analysis.py
+│
+├── run.py                       # Thin launcher script
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
 > The `data/` directory is excluded from version control and is generated at runtime.
